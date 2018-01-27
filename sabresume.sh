@@ -2,7 +2,7 @@
 #SABKEY=
 SABHOST="${SABHOST:-sabnzbd}"
 SABPORT="${SABPORT:-8080}"
-PROT="${PROT:http}"
+PROT="${PROT:-http}"
 SPACELIMIT="${SPACELIMIT:-20}"
 SLEEP="${SLEEP:-300}"
 if  ! curl -L -s  "$PROT://${SABHOST}:${SABPORT}/api?apikey=${SABKEY}&output=json&mode=fullstatus" | grep -q 'pid'; then
