@@ -1,5 +1,5 @@
 # What is Sabresume
-Sabresume is a shell script that restarts paused sabnzbd downloads. Sabnzbd may pause downloads due to a lack of disk space. It does not resume once disk space is availanle. Sabresume addresses that issue.
+Sabresume is a shell script that restarts paused sabnzbd downloads. Sabnzbd may pause downloads due to a lack of disk space. It does not resume once disk space is available. Sabresume addresses that issue.
 
 ## How to use this image
 # Usage
