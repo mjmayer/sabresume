@@ -9,7 +9,6 @@ if  ! curl -L -s  "$PROT://${SABHOST}:${SABPORT}/api?apikey=${SABKEY}&output=jso
   echo "Failed to connect to: $PROT://$SABHOST:$SABPORT using apikey $SABKEY"
   exit
 fi
-exit
 PAUSED=$(curl -s -L "$PROT://${SABHOST}:${SABPORT}/api?apikey=${SABKEY}&output=json&mode=queue&search=paused" | jq -r '.["queue"]["paused"]')
 FREESPACE=$(curl -s -L "$PROT://${SABHOST}:${SABPORT}/api?apikey=${SABKEY}&output=json&mode=queue&search=paused" | jq -r '.["queue"]["diskspace1"]')
 while true; do
